@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chiapas Digital y Próspero | Propuesta Estratégica v4.0</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<pin-modal>
+<div id="pinModal" class="pin-modal active">
+  <div class="pin-backdrop"></div>
+  <div class="pin-content">
+    <div class="pin-head">
+      <div class="pin-logo"><i class="fas fa-shield-halved"></i></div>
+      <h2>Acceso Protegido</h2>
+      <p>Chiapas Digital y Próspero</p>
+    </div>
+    <div class="pin-content-pin-body" style="padding:2.2rem 2rem;text-align:center;">
+      <p style="font-weight:700;margin-bottom:1.5rem;">Ingrese el PIN de acceso</p>
+      <div class="pin-inputs">
+        <input type="password" maxlength="1" class="pin-digit" data-i="0" inputmode="numeric">
+        <input type="password" maxlength="1" class="pin-digit" data-i="1" inputmode="numeric">
+        <input type="password" maxlength="1" class="pin-digit" data-i="2" inputmode="numeric">
+        <input type="password" maxlength="1" class="pin-digit" data-i="3" inputmode="numeric">
+      </div>
+      <div id="pinError" style="color:var(--crimson);font-weight:700;min-height:1.3rem;margin-bottom:1rem;"></div>
+      <button id="pinSubmit" class="pin-submit">Acceder</button>
+    </div>
+    <div class="pin-foot"><small>Acceso restringido · Propuesta Confidencial · v4.0</small></div>
+  </div>
+</div>
+</pin-modal>
+
+<div id="mainSite" class="main-site">
+
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <div class="logo-icon"><i class="fas fa-landmark"></i></div>
+      <div>
+        <div class="logo-title">Chiapas Digital y Próspero</div>
+        <div class="logo-sub">Propuesta Estratégica 4.0 · Octubre 2026</div>
+      </div>
+    </div>
+    <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#inicio" class="nav-link">Inicio</a></li>
+      <li><a href="#diagnostico" class="nav-link">Diagnóstico</a></li>
+      <li><a href="#portafolio" class="nav-link">Portafolio P1–P12</a></li>
+      <li><a href="#recaudacion" class="nav-link">Recaudación</a></li>
+      <li><a href="#contratacion" class="nav-link">Contratación</a></li>
+      <li><a href="#riesgos" class="nav-link">Riesgos</a></li>
+      <li><a href="#acercamiento" class="nav-link">Acercamiento</a></li>
+      <li><a href="#anexos" class="nav-link">Anexos</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header id="inicio" class="hero">
+  <div class="hero-bg"><div class="hero-overlay"></div></div>
+  <div class="hero-content">
+    <div class="hero-badge"><i class="fas fa-certificate"></i><span>PROPUESTA CONFIDENCIAL</span></div>
+    <h1 class="hero-title"><span>Chiapas Digital</span><span class="grad-text">y Próspero</span></h1>
+    <p class="hero-sub">Estudio de oportunidades y portafolio de proyectos tecnológicos, de recaudación, movilidad y servicios para el Gobierno del Estado de Chiapas</p>
+    <div class="hero-meta">
+      <div class="hero-meta-item"><i class="fas fa-user-tie"></i><span>Preparado para: Mtro. Eduardo Ramírez Aguilar, Gobernador Constitucional</span></div>
+      <div class="hero-meta-item"><i class="fas fa-file-signature"></i><span>Versión 4.0 · Octubre 2026</span></div>
+    </div>
+    <div class="hero-actions">
+      <a href="#portafolio" class="btn btn-primary"><span>Ver las 12 fichas completas</span><i class="fas fa-file-invoice"></i></a>
+      <a href="#graficas" class="btn btn-secondary"><span>Gráficas y tablas</span><i class="fas fa-chart-bar"></i></a>
+    </div>
+  </div>
+  <div class="hero-scroll"><div class="scroll-ind"><span>Deslizar</span><i class="fas fa-chevron-down"></i></div></div>
+</header>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-card"><div class="stat-icon"><i class="fas fa-users"></i></div><div><div class="stat-num">66.0%</div><div class="stat-lab">Pobreza multidimensional (INEGI 2024)</div></div></div>
+      <div class="stat-card"><div class="stat-icon"><i class="fas fa-exclamation-triangle"></i></div><div><div class="stat-num">27.1%</div><div class="stat-lab">Pobreza extrema, la mayor del país</div></div></div>
+      <div class="stat-card"><div class="stat-icon"><i class="fas fa-project-diagram"></i></div><div><div class="stat-num">12</div><div class="stat-lab">Proyectos en cuatro frentes</div></div></div>
+      <div class="stat-card"><div class="stat-icon"><i class="fas fa-credit-card"></i></div><div><div class="stat-num">80–90%</div><div class="stat-lab">Pagos aún en efectivo (Banxico)</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 1 RESUMEN -->
+<section id="resumen" class="section">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-badge">1</div>
+      <h2 class="sec-title">Resumen Ejecutivo</h2>
+      <p class="sec-sub">Financiado mayoritariamente con comisiones y ahorros, no con presupuesto estatal · cada proyecto puede adoptarse de forma independiente</p>
+    </div>
+    <div class="table-wrap">
+      <div class="table-title"><i class="fas fa-layer-group"></i> Los cuatro frentes del portafolio</div>
+      <div class="table-scroll"><table class="data-table">
+        <thead><tr><th>Frente</th><th>Proyectos incluidos</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Gobierno digital y recaudación</strong></td><td>Ventanilla única (P1), licencia y tránsito digital (P2), registro público, catastro y escritura digital (P3), motor de recaudación (P4) y app de gobierno con denuncias (P11)</td></tr>
+          <tr><td><strong>Movilidad</strong></td><td>Credencial QR y recaudo electrónico (P5), transporte urbano eléctrico financiado (P6) y pase turístico con red de transporte (P12)</td></tr>
+          <tr><td><strong>Economía local y pagos</strong></td><td>Red de POS comunitario en abarrotes y tortillerías con proveeduría local y crédito (P7)</td></tr>
+          <tr><td><strong>Servicios básicos y energía</strong></td><td>Agua inteligente con energía solar para bombas (P8), financiamiento energético a ayuntamientos (P9) e internet comunitario satelital (P10)</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+    <div class="msg-box">
+      <p>Se recomienda iniciar con ventanilla digital con pocos trámites, licencia digital, app de gobierno en un municipio y preparación del piloto de POS. Resultados visibles y medibles con riesgo acotado.</p>
+      <span class="attrib">Tres principios: financiamiento por comisión y ahorro · transición gradual · medición desde el inicio</span>
+    </div>
+  </div>
+</section>
+
+<!-- 2 ALCANCE -->
+<section id="alcance" class="section section-alt">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-badge">2</div>
+      <h2 class="sec-title">Alcance y Metodología</h2>
+    </div>
+    <div class="anexos-grid">
+      <div class="table-wrap">
+        <div class="table-title"><i class="fas fa-route"></i> Cuatro pasos del estudio</div>
+        <div class="table-scroll"><table class="data-table"><tbody>
+          <tr><td><strong>1</strong></td><td>Revisión del contexto político e institucional</td></tr>
+          <tr><td><strong>2</strong></td><td>Diagnóstico de carencias sociales y económicas</td></tr>
+          <tr><td><strong>3</strong></td><td>Revisión del marco normativo y de las plataformas existentes</td></tr>
+          <tr><td><strong>4</strong></td><td>Construcción del portafolio con lógica económica, contratación y hoja de ruta</td></tr>
+        </tbody></table></div>
+      </div>
+      <div class="table-wrap">
+        <div class="table-title"><i class="fas fa-triangle-exclamation"></i> Limitaciones declaradas</div>
+        <div class="table-scroll"><table class="data-table"><tbody>
+          <tr><td>Sin acceso a datos internos de recaudación, padrones ni contratos; las estimaciones son escenarios de trabajo, no pronósticos</td></tr>
+          <tr><td>Indicadores previos (Índice de Desarrollo Digital 2021) deben actualizarse</td></tr>
+          <tr><td>Datos periodísticos marcados «por confirmar» (aportación de plataformas de transporte)</td></tr>
+          <tr><td>El Anexo A propone un cuestionario para completar el sondeo con dependencias</td></tr>
+        </tbody></table></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3 DIAGNOSTICO -->
+<section id="diagnostico" class="section">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-badge">3</div>
+      <h2 class="sec-title">Diagnóstico del Estado</h2>
+      <p class="sec-sub">Contexto institucional, condiciones sociales, marco legal y finanzas públicas</p>
+    </div>
+
+    <div class="table-wrap">
+      <div class="table-title"><i class="fas fa-landmark-flag"></i> 3.1 Contexto institucional</div>
+      <div class="table-scroll"><table class="data-table"><tbody>
+        <tr><td><strong>Periodo de gobierno</strong></td><td>Mtro. Eduardo Ramírez Aguilar: 8 dic 2024 – 7 dic 2030 (ventana de ejecución de poco más de cuatro años)</td></tr>
+        <tr><td><strong>Agenda pública</strong></td><td>Seguridad y pacificación; autopista Palenque–San Cristóbal (~153 km); frontera sur como polo de desarrollo; programas sociales «Chiapas Puede»</td></tr>
+        <tr><td><strong>Interés declarado</strong></td><td>Visita al Cablebús CDMX (2024): interés en proyecto similar para Tuxtla Gutiérrez</td></tr>
+      </tbody></table></div>
+    </div>
+
+    <div class="table-wrap">
+      <div class="table-title"><i class="fas fa-file-shield"></i> 3.3 Gobierno digital — Marco habilitador</div>
+      <div class="table-scroll"><table class="data-table">
+        <thead><tr><th>Elemento</th><th>Detalle</th></tr></thead>
+        <tbody>
+          <tr><td>Constitución local</td><td>Prevé un Sistema de Gobierno Digital</td></tr>
+          <tr><td>Ley de Gobierno Digital</td><td>Crea la Agencia Digital Tecnológica; principios de inclusión, legalidad y lenguaje claro</td></tr>
+          <tr><td>Simplificación 2025</td><td>Reduce plazos y elimina requisitos en trámites del Registro Civil</td></tr>
+          <tr><td>Integridad documental</td><td>Redes de falsificación detectadas en Registro Civil → refuerza la necesidad de documentos digitales verificables</td></tr>
+          <tr><td>Registro Público</td><td>Reglamento ya prevé folio electrónico y firma electrónica, pero certificados siguen presenciales (por confirmar)</td></tr>
+          <tr><td>Índice Desarrollo Digital 2021</td><td>Chiapas entre las entidades más rezagadas en gobierno digital (dato antiguo, a actualizar)</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+
+    <!-- FIGURA 1: integrada en el diagnóstico -->
+    <div class="fig-card fig-full">
+      <div class="fig-head"><i class="fas fa-users"></i> Figura 1 · Pobreza multidimensional y extrema, 2024 — Fuente: INEGI</div>
+      <img src="assets/fig01-pobreza-multidimensional-extrema.png" alt="Pobreza 2024">
+      <div class="fig-cap">Chiapas encabeza ambas mediciones: 66.0% en pobreza multidimensional (vs. 29.6% nacional) y 27.1% en pobreza extrema (vs. 5.3% nacional). La magnitud de estas carencias implica que las soluciones deben diseñarse con acceso asistido, lenguas originarias, celular básico y puntos de atención en el comercio de barrio — no solo aplicaciones para población conectada (3.2).</div>
+    </div>
+
+    <div class="table-wrap">
+      <div class="table-title"><i class="fas fa-money-bill-transfer"></i> 3.5 Movilidad — Hallazgos del sondeo</div>
+      <div class="table-scroll"><table class="data-table">
+        <thead><tr><th>#</th><th>Hallazgo</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>No existe sistema de pago con tarjeta o recaudo electrónico en transporte urbano</td></tr>
+          <tr><td>2</td><td>Jun 2026: encuentro con concesionarios sobre financiamiento de autobuses eléctricos, sin flotas ni rutas anunciadas</td></tr>
+          <tr><td>3</td><td>Interés del gobernador en Cablebús para Tuxtla, sin avances localizados</td></tr>
+          <tr><td>4</td><td>Plataformas (Uber/DiDi): Constancia de Registro y aportación de 1.5% por viaje (por confirmar)</td></tr>
+          <tr><td>5</td><td>Antecedente del «Conejobús» recordado por la opinión local como advertencia</td></tr>
+          <tr><td>·</td><td>1,854 concesiones de taxi entregadas en Tuxtla (ene 2023). El Aeropuerto es concesión federal, fuera del portafolio</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+
+    <div class="table-wrap">
+      <div class="table-title"><i class="fas fa-water"></i> 3.6 Agua y energía municipal · 3.7 Seguridad · 3.8 Pagos</div>
+      <div class="table-scroll"><table class="data-table"><tbody>
+        <tr><td><strong>Agua</strong></td><td>Competencia municipal (SMAPA en Tuxtla); derecho humano con mínimo vital garantizado; quejas por desabasto y recargos; consumo eléctrico de bombas es gasto principal; pérdidas de hasta 50% en ciudades de referencia por fugas y tomas clandestinas</td></tr>
+        <tr><td><strong>Seguridad</strong></td><td>Prioridad estatal (pedido de denunciar extorsión); los pagos digitales reducen manejo de efectivo; operación en campo con protocolos de seguridad</td></tr>
+        <tr><td><strong>Marco federal 2026</strong></td><td>Reforma SPEI vigente desde 18 jun 2026 (banca hasta 14 dic 2026, cuentas simplificadas); impulso a CoDi; pagos digitales obligatorios en gasolineras y casetas; iniciativa federal de Ley de Economía Digital (Paquete Económico 2027) con CURP Digital y Expediente Digital Ciudadano — aún no aprobada</td></tr>
+        <tr><td><strong>Finanzas 3.4</strong></td><td>Alta dependencia de participaciones federales; Ley de Ingresos 2026 declara prioridad la eficiencia recaudatoria e identifica derechos del Instituto Registral y de Catastro</td></tr>
+      </tbody></table></div>
+    </div>
+  </div>
+</section>
+
+<!-- 4 ARQUITECTURA -->
+<section id="arquitectura" class="section section-alt">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-badge">4</div>
+      <h2 class="sec-title">Arquitectura de la Propuesta</h2>
+      <p class="sec-sub">Tres principios guían el diseño del portafolio</p>
+    </div>
+    <div class="scen-grid">
+      <div class="scen-card base">
+        <div style="font-size:2.4rem;color:var(--gold);margin-bottom:.6rem;"><i class="fas fa-coins"></i></div>
+        <h3 style="font-weight:900;margin-bottom:.5rem;">Financiamiento por comisión y ahorro</h3>
+        <p style="color:var(--gray-600);font-size:.95rem;">Los equipos y plataformas no representan gasto inicial para el estado; se financian con comisiones y ahorros verificados.</p>
+      </div>
+      <div class="scen-card amb">
+        <div style="font-size:2.4rem;color:var(--gold);margin-bottom:.6rem;"><i class="fas fa-route"></i></div>
+        <h3 style="font-weight:900;margin-bottom:.5rem;">Transición gradual</h3>
+        <p style="color:var(--gray-600);font-size:.95rem;">Efectivo y atención asistida mientras crece la adopción digital; nadie queda fuera durante el cambio.</p>
+      </div>
+      <div class="scen-card cons">
+        <div style="font-size:2.4rem;color:var(--gold);margin-bottom:.6rem;"><i class="fas fa-ruler"></i></div>
+        <h3 style="font-weight:900;margin-bottom:.5rem;">Medición desde el inicio</h3>
+        <p style="color:var(--gray-600);font-size:.95rem;">Línea base e indicadores públicos para cada proyecto, con resultados verificables en cada anuncio.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5 PORTAFOLIO -->
+<section id="portafolio" class="section">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-badge">5</div>
+      <h2 class="sec-title">Portafolio de Proyectos — Fichas Completas P1 a P12</h2>
+      <p class="sec-sub">Cada ficha: problema, solución, componentes, impactos, modelo, inversión, piloto, indicadores y riesgos</p>
+    </div>
+
+    <!-- GOBIERNO DIGITAL -->
+    <div class="pf-category">
+      <div class="pf-cat-head"><div class="pf-cat-icon"><i class="fas fa-landmark"></i></div><div><h3 class="pf-cat-title">Gobierno Digital y Recaudación</h3><p class="pf-cat-sub">P1 · P2 · P3 · P4 · P11</p></div></div>
+      <div class="pf-fichas">
+
+        <article class="full-ficha">
+          <div class="ff-head"><div class="ff-id">P1</div><div><h3>Ventanilla Única Digital e Identidad Ciudadana Chiapaneca</h3><p>Gobierno digital y recaudación</p></div></div>
+          <div class="ff-body">
+            <div class="ff-section"><h4><i class="fas fa-exclamation-circle"></i>Problema que atiende</h4><p>Trámites dispersos, presenciales y expuestos a intermediarios («coyotes») y a la falsificación de documentos; la propia Fiscalía estatal ha desmantelado redes de documentos falsos en oficinas del Registro Civil.</p></div>
+            <div class="ff-section"><h4><i class="fas fa-lightbulb"></i>Solución propuesta</h4><p>Portal y app móvil únicos donde la persona se identifica una vez y realiza todos los trámites estatales, con pago en línea, seguimiento en tiempo real y documentos digitales con validez jurídica (firma electrónica avanzada y sello digital con código QR verificable).</p></div>
+            <div class="ff-section"><h4><i class="fas fa-cubes"></i>Componentes clave</h4><ul class="ff-list">
+              <li>Cartera de documentos digitales (acta, constancias, licencia, pagos).</li>
+              <li>Firma electrónica y sello digital verificable por terceros.</li>
+              <li>Catálogo estatal de trámites simplificados y expediente único.</li>
+              <li>Modo asistido en módulos y municipios, con lenguas originarias.</li>
+            </ul></div>
+            <div class="ff-grid-2">
+              <div class="ff-card"><h4><i class="fas fa-chart-line"></i>Impacto en economía y recaudación</h4><p>Reduce fuga por intermediarios y corrupción; aumenta cobro de derechos al digitalizar el pago; libera personal para tareas de fiscalización.</p></div>
+              <div class="ff-card"><h4><i class="fas fa-users"></i>Impacto social</h4><p>Menos traslados desde comunidades alejadas; menor costo de oportunidad para la población en pobreza; acceso en lenguas indígenas.</p></div>
+            </div>
+            <div class="ff-section"><h4><i class="fas fa-handshake"></i>Modelo de contratación / negocio</h4><p>Licenciamiento SaaS por el gobierno, o desarrollo a medida con soporte anual; posible esquema por transacción. Debe alinearse a la Ley de Gobierno Digital y a la Agencia Digital Tecnológica del Estado.</p></div>
+            <div class="ff-grid-2">
+              <div class="ff-card"><h4><i class="fas fa-coins"></i>Escala de inversión</h4><p>Media (software + integración + capacitación).</p></div>
+              <div class="ff-card"><h4><i class="fas fa-rocket"></i>Piloto sugerido</h4><p>5 a 10 trámites de mayor volumen en Tuxtla Gutiérrez y Tapachula durante 90 a 120 días.</p></div>
+            </div>
+            <div class="ff-grid-2">
+              <div class="ff-card"><h4><i class="fas fa-chart-bar"></i>Indicadores de éxito</h4><ul class="ff-list"><li>Trámites 100% en línea</li><li>Tiempo promedio de resolución</li><li>% de pagos digitales</li><li>Reducción de quejas</li></ul></div>
+              <div class="ff-card"><h4><i class="fas fa-exclamation-triangle"></i>Riesgos y dependencias</h4><ul class="ff-list"><li>Conectividad rural</li><li>Interoperabilidad con sistemas existentes</li><li>Protección de datos personales</li></ul></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="full-ficha">
+          <div class="ff-head"><div class="ff-id">P2</div><div><h3>Licencia de Conducir, Tránsito y Padrón Vehicular Digital</h3><p>Gobierno digital y recaudación</p></div></div>
+          <div class="ff-body">
+            <div class="ff-section"><h4><i class="fas fa-exclamation-circle"></i>Problema que atiende</h4><p>Trámite presencial en módulos, multas y refrendos con alta evasión, y padrón vehicular con información incompleta.</p></div>
+            <div class="ff-section"><h4><i class="fas fa-lightbulb"></i>Solución propuesta</h4><p>Licencia de conducir digital con QR verificable por tránsito, cita y examen asistidos, cobro de refrendo y multas en línea y en comercios, y depuración del padrón vehicular con analítica.</p></div>
+            <div class="ff-section"><h4><i class="fas fa-cubes"></i>Componentes clave</h4><ul class="ff-list">
+              <li>Licencia y tarjeta de circulación digitales en cartera móvil.</li>
+              <li>Motor de recordatorios y cobro de refrendo y multas.</li>
+              <li>Verificación de documentos por agentes con app móvil.</li>
+              <li>Interconexión con registro de concesiones de transporte.</li>
+            </ul></div>
+            <div class="ff-grid-2">
+              <div class="ff-card"><h4><i class="fas fa-chart-line"></i>Impacto en economía y recaudación</h4><p>Mayor cumplimiento en refrendo, derechos y multas; reducción de discrecionalidad; nuevo flujo de ingresos por servicios digitales.</p></div>
+              <div class="ff-card"><h4><i class="fas fa-users"></i>Impacto social</h4><p>Menos filas y gestores; transparencia en infracciones.</p></div>
+            </div>
+            <div class="ff-section"><h4><i class="fas fa-handshake"></i>Modelo de contratación / negocio</h4><p>Concesión de servicio tecnológico: el proveedor opera la plataforma y se paga por transacción o por porcentaje del incremento verificado, sujeto a revisión jurídica.</p></div>
+            <div class="ff-grid-2">
+              <div class="ff-card"><h4><i class="fas fa-coins"></i>Escala de inversión</h4><p>Baja a media.</p></div>
+              <div class="ff-card"><h4><i class="fas fa-rocket"></i>Piloto sugerido</h4><p>Licencia digital y pago de refrendo en la zona metropolitana de Tuxtla Gutiérrez.</p></div>
+            </div>
+            <div class="ff-grid-2">
+              <div class="ff-card"><h4><i class="fas fa-chart-bar"></i>Indicadores de éxito</h4><ul class="ff-list"><li>% de licencias emitidas digitalmente</li><li>Recaudación por refrendo</li><li>Tiempo de atención</li></ul></div>
+              <div class="ff-card"><h4><i class="fas fa-exclamation-triangle"></i>Riesgos y dependencias</h4><ul class="ff-list"><li>Resistencia de intermediarios y de personal</li><li>Cuidado con esquemas de pago por multa (incentivos perversos)</li></ul></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="full-ficha">
+          <div class="ff-head"><div class="ff-id">P3</div><div><h3>Registro Público, Catastro y Escritura Digital</h3><p>Gobierno digital y recaudación</p></div></div>
+          <div class="ff-body">
+            <div class="ff-section"><h4><i class="fas fa-exclamation-circle"></i>Problema que atiende</h4><p>La certeza jurídica sobre la tierra y la vivienda es base del crédito, la inversión y la paz social. El reglamento ya prevé folio electrónico y firma electrónica (con Ley de Firma Electrónica Avanzada), pero el certificado de libertad de gravamen sigue presencial y tarda 5–8 días hábiles (por confirmar). Nuevo León ya opera ventanilla digital para notarios, geoportal y digitalización de libros históricos.</p></div>
+            <div class="ff-section"><h4><i class="fas fa-lightbulb"></i>Solución propuesta</h4><p>Escritura digital por capas: se mantiene la escritura pública y la fe del notario, y se digitaliza todo el ciclo alrededor (preparación, firma, ingreso, registro, consulta, certificados y protección del propietario).</p></div>
+            <div class="ff-section"><h4><i class="fas fa-cubes"></i>Componentes clave</h4><ul class="ff-list">
+              <li>Folio real electrónico completo: acervo digitalizado, depurado y estructurado, con consulta en línea.</li>
+              <li>Ventanilla digital para notarios: ingreso y firma electrónica sin papel, con seguimiento.</li>
+              <li>Certificados en minutos: libertad de gravamen con pago en línea y firma verificable por QR.</li>
+              <li><strong>Alerta registral al propietario:</strong> aviso inmediato al celular ante cualquier intento de inscripción sobre su predio; herramienta central contra el despojo y el fraude.</li>
+              <li>Protocolo notarial digital: copia y respaldo seguro del archivo de notarías.</li>
+              <li>Cartografía catastral enlazada al folio para detectar traslapes.</li>
+              <li>Programa social de formalización: regularización de predios, sucesiones y testamentos con costos reducidos.</li>
+              <li>Blockchain opcional: solo como capa de integridad documental; no es requisito.</li>
+            </ul></div>
+            <div class="ff-grid-2">
+              <div class="ff-card"><h4><i class="fas fa-chart-line"></i>Impacto en economía y recaudación</h4><p>Aumenta ingresos por derechos registrales, certificados y catastro; mejora la base del predial municipal (convenios); facilita crédito hipotecario e inversión.</p></div>
+              <div class="ff-card"><h4><i class="fas fa-users"></i>Impacto social</h4><p>Protege el patrimonio, reduce despojo y duplicidad de escrituras, y formaliza la propiedad de familias que hoy no tienen certeza.</p></div>
+            </div>
+            <div class="ff-section"><h4><i class="fas fa-handshake"></i>Modelo de contratación / negocio</h4><p>Contrato de servicios por fases (digitalización, plataforma, ventanilla); arrendamiento de plataforma; posible participación en ingresos incrementales por derechos (a validar jurídicamente).</p></div>
+            <div class="ff-grid-2">
+              <div class="ff-card"><h4><i class="fas fa-coins"></i>Escala de inversión</h4><p>Media a alta (la digitalización y depuración del acervo es el rubro más intensivo).</p></div>
+              <div class="ff-card"><h4><i class="fas fa-rocket"></i>Piloto sugerido</h4><p>Una oficina registral regional, un grupo de notarías, certificado digital de gravamen y alerta al propietario, en 90 a 120 días.</p></div>
+            </div>
+            <div class="ff-grid-2">
+              <div class="ff-card"><h4><i class="fas fa-chart-bar"></i>Indicadores de éxito</h4><ul class="ff-list"><li>% de acervo digitalizado</li><li>Tiempo de inscripción y de certificado</li><li>Ingresos por derechos registrales</li><li>Predios actualizados en catastro</li><li>Intentos de fraude detectados</li></ul></div>
+              <div class="ff-card"><h4><i class="fas fa-exclamation-triangle"></i>Riesgos y dependencias</h4><ul class="ff-list"><li>Resistencia notarial (avanzar con su participación)</li><li>Calidad del acervo físico</li><li>Ejidos y propiedad social, dependen de instancias federales y requieren tratamiento específico</li></ul></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="full-ficha">
+          <div class="ff-head"><div class="ff-id">P4</div><div><h3>Motor Inteligente de Recaudación y Cumplimiento Fiscal Gradual</h3><p>Gobierno digital y recaudación</p></div></div>
+          <div class="ff-body">
+            <div class="ff-section"><h4><i class="fas fa-exclamation-circle"></i>Problema que atiende</h4><p>Alta dependencia de recursos federales y alta informalidad económica; las leyes fiscales exigen procesos digitales a un universo con poca bancarización y baja alfabetización digital.</p></div>
+            <div class="ff-section"><h4><i class="fas fa-lightbulb"></i>Solución propuesta</h4><p>Plataforma de inteligencia fiscal que cruza padrones (negocios, vehículos, nómina, hospedaje, registro, concesiones) para identificar omisos y brechas, combinada con una ruta de formalización gradual e incentivos de cumplimiento en lugar de sanciones abruptas.</p></div>
+            <div class="ff-section"><h4><i class="fas fa-cubes"></i>Componentes clave</h4><ul class="ff-list">
+              <li>Cruce de datos y analítica para detectar omisión en impuesto sobre nómina, hospedaje, derechos y refrendos.</li>
+              <li>Red de puntos de pago en comercios de barrio y kioscos con POS sin costo para el comerciante.</li>
+              <li>Programa de incentivos y recompensas por cumplimiento puntual (gamificación: puntos, sorteos, descuentos).</li>
+              <li>Ruta de formalización por etapas con asesoría y facilidades para micronegocios.</li>
+              <li>Directorio estatal de negocios georreferenciado para fiscalización y promoción.</li>
+            </ul></div>
+            <div class="ff-grid-2">
+              <div class="ff-card"><h4><i class="fas fa-chart-line"></i>Impacto en economía y recaudación</h4><p>Es el proyecto con <strong>mayor potencial de incremento de ingresos propios</strong>; el efecto depende de la base actual, a validar con Hacienda estatal.</p></div>
+              <div class="ff-card"><h4><i class="fas fa-users"></i>Impacto social</h4><p>Formalización amigable que abre acceso a crédito y seguridad social para microempresas; menos extorsión por efectivo al operar pagos digitales.</p></div>
+            </div>
+            <div class="ff-section"><h4><i class="fas fa-handshake"></i>Modelo de contratación / negocio</h4><p>Servicio administrado: tarifa fija más componente variable sobre el incremento verificado de recaudación (requiere opinión jurídica y contrato con auditoría independiente).</p></div>
+            <div class="ff-grid-2">
+              <div class="ff-card"><h4><i class="fas fa-coins"></i>Escala de inversión</h4><p>Media. El kiosco de pago puede financiarse con comisión por transacción en lugar de costo directo al comercio.</p></div>
+              <div class="ff-card"><h4><i class="fas fa-rocket"></i>Piloto sugerido</h4><p>Un padrón sectorial (hospedaje o nómina) y 200 a 500 puntos de pago en 2 ciudades.</p></div>
+            </div>
+            <div class="ff-grid-2">
+              <div class="ff-card"><h4><i class="fas fa-chart-bar"></i>Indicadores de éxito</h4><ul class="ff-list"><li>Incremento de recaudación frente a línea base</li><li>Número de contribuyentes nuevos</li><li>Tasa de pago puntual</li><li>Costo de cobranza</li></ul></div>
+              <div class="ff-card"><h4><i class="fas fa-exclamation-triangle"></i>Riesgos y dependencias</h4><ul class="ff-list"><li>Percepción de «recaudatorio» sin beneficios visibles</li><li>Protección de datos fiscales</li><li>Necesidad de convenios de colaboración con SAT y municipios</li></ul></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="full-ficha">
+          <div class="ff-head"><div class="ff-id">P11</div><div><h3>App de Gobierno para Todos los Ciudadanos (trámites, pagos y denuncias)</h3><p>Gobierno digital y recaudación</p></div></div>
+          <div class="ff-body">
+            <div class="ff-section"><h4><i class="fas fa-exclamation-circle"></i>Problema que atiende</h4><p>Los ciudadanos deben recorrer varias dependencias y canales para tramitar, pagar o reportar problemas; los reportes de seguridad, servicios y baches no tienen un canal único con seguimiento.</p></div>
+            <div class="ff-section"><h4><i class="fas fa-lightbulb"></i>Solución propuesta</h4><p>Una app y portal únicos de gobierno con trámites, pagos y seguimiento, además de reportes y denuncias desde el celular, atendidos por un call center propio con tecnología P2P, con atención en lenguas originarias.</p></div>
+            <div class="ff-section"><h4><i class="fas fa-cubes"></i>Componentes clave</h4><ul class="ff-list">
+              <li>Trámites y pagos con seguimiento (conectado con P1 y P7).</li>
+              <li>Reportes ciudadanos por foto: baches, alumbrado, basura y fallas de agua.</li>
+              <li>Denuncias y atención por voz y mensaje en call center con llamadas P2P, que reducen consumo de datos e infraestructura.</li>
+              <li>Alertas de protección civil por lluvia y sismo.</li>
+              <li>Atención en lenguas originarias y modo asistido.</li>
+            </ul></div>
+            <div class="ff-grid-2">
+              <div class="ff-card"><h4><i class="fas fa-chart-line"></i>Impacto en economía y recaudación</h4><p>Más cumplimiento por facilidad de pago; menos costo de atención con tecnología P2P que usa mínimos recursos de servidor.</p></div>
+              <div class="ff-card"><h4><i class="fas fa-users"></i>Impacto social</h4><p>Un canal único y cercano con el gobierno, con seguimiento de cada reporte y atención accesible.</p></div>
+            </div>
+            <div class="ff-section"><h4><i class="fas fa-handshake"></i>Modelo de contratación / negocio</h4><p>Licenciamiento de la plataforma y servicio de call center por llamada o por usuario atendido. Las decisiones sobre alcance y operación corresponden a las autoridades.</p></div>
+            <div class="ff-grid-2">
+              <div class="ff-card"><h4><i class="fas fa-coins"></i>Escala de inversión</h4><p>Media.</p></div>
+              <div class="ff-card"><h4><i class="fas fa-rocket"></i>Piloto sugerido</h4><p>Un municipio y 5 a 10 trámites y tipos de reporte durante 90 días.</p></div>
+            </div>
+            <div class="ff-grid-2">
+              <div class="ff-card"><h4><i class="fas fa-chart-bar"></i>Indicadores de éxito</h4><ul class="ff-list"><li>Usuarios activos</li><li>Reportes atendidos</li><li>Tiempo de respuesta / satisfacción</li><li>% de pagos desde la app</li></ul></div>
+              <div class="ff-card"><h4><i class="fas fa-exclamation-triangle"></i>Riesgos y dependencias</h4><ul class="ff-list"><li>Para denuncias, usar relevo (servidor TURN) para proteger identidad y garantizar conexión en redes móviles</li><li>Registro de evidencia con consentimiento</li><li>Respaldo por telefonía tradicional</li><li>Coordinación con el 911</li></ul></div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- MOVILIDAD -->
+    <div class="pf-category">
+      <div class="pf-cat-head"><div class="pf-cat-icon"><i class="fas fa-bus"></i></div><div><h3 class="pf-cat-title">Movilidad y Turismo</h3><p class="pf-cat-sub">P5 · P6 · P12</p></div></div>
+      <div class="pf-fichas">
+
+        <article class="full-ficha">
+          <div class="ff-head"><div class="ff-id">P5</div><div><h3>Credencial QR de Transporte, Recaudo Electrónico y Cajeros de Autopago</h3><p>Movilidad y turismo</p></div></div>
+          <div class="ff-body">
+            <div class="ff-section"><h4><i class="fas fa-exclamation-circle"></i>Problema que atiende</h4><p>El pasaje se paga en efectivo y no se encontró sistema de pago con tarjeta. Eso facilita la fuga de ingresos y dificulta verificar tarifas sociales (exención estudiantil que el gremio dijo estar dispuesto a discutir en 2026). Plataformas: 1.5% por viaje (por confirmar), sin capa tecnológica para verificarlo.</p></div>
+            <div class="ff-section"><h4><i class="fas fa-lightbulb"></i>Solución propuesta</h4><p>Una credencial de transporte urbano con QR y tarjeta, una red de recarga y cajeros de autopago, y un registro y licencia digital para operadores de taxi, transporte colectivo y plataformas.</p></div>
+            <div class="ff-section"><h4><i class="fas fa-cubes"></i>Componentes clave</h4><ul class="ff-list">
+              <li><strong>Credencial con QR:</strong> identifica al usuario, guarda saldo y perfil de tarifa (general, estudiante, adulto mayor, persona con discapacidad); funciona con tarjeta, QR en celular y, después, tarjeta bancaria.</li>
+              <li>Cajeros de autopago y recarga en terminales, plazas, mercados y red de POS (P7).</li>
+              <li>Validadores a bordo de bajo costo con GPS y conteo de pasajeros, con modo sin conexión.</li>
+              <li>Licencia digital del operador: QR del conductor y de la unidad (vigencia, seguro, aptitud), válido para taxi, colectivo y plataformas.</li>
+              <li>Plataformas: verificación de conductores/vehículos y conexión con reportes de viajes para auditar la aportación.</li>
+              <li>Tablero de rutas, ingresos y quejas para la Secretaría de Movilidad.</li>
+            </ul></div>
+            <div class="ff-grid-2">
+              <div class="ff-card"><h4><i class="fas fa-chart-line"></i>Impacto en economía y recaudación</h4><p>Reduce la fuga de efectivo, da trazabilidad para cobrar derechos de concesión y la aportación de plataformas, permite subsidios verificables y crea ingresos por comisión de recarga.</p></div>
+              <div class="ff-card"><h4><i class="fas fa-users"></i>Impacto social</h4><p>Pasaje con tarifa social comprobable, mayor seguridad para el usuario y un gremio más formalizado.</p></div>
+            </div>
+            <div class="ff-section"><h4><i class="fas fa-handshake"></i>Modelo de contratación / negocio</h4><p>Concesión de servicio de recaudo (el operador instala validadores y cajeros y cobra comisión sobre la recarga); contrato de servicios para el registro digital. Los equipos no tienen costo para el estado y se financian con las comisiones.</p></div>
+            <div class="ff-grid-2">
+              <div class="ff-card"><h4><i class="fas fa-coins"></i>Escala de inversión</h4><p>Baja a media en credencial, recarga y registro; media en validadores y cajeros.</p></div>
+              <div class="ff-card"><h4><i class="fas fa-rocket"></i>Piloto sugerido</h4><p>Una ruta troncal de Tuxtla Gutiérrez durante 4 a 6 meses, con credencial QR, validadores, recarga en comercios y efectivo todavía permitido.</p></div>
+            </div>
+            <div class="ff-grid-2">
+              <div class="ff-card"><h4><i class="fas fa-chart-bar"></i>Indicadores de éxito</h4><ul class="ff-list"><li>% de viajes pagados con la credencial</li><li>Reducción de efectivo</li><li>Tarifas sociales verificadas</li><li>Aportación de plataformas auditada</li></ul></div>
+              <div class="ff-card"><h4><i class="fas fa-exclamation-triangle"></i>Riesgos y dependencias</h4><ul class="ff-list"><li>Resistencia de quienes hoy manejan el efectivo</li><li>Exclusión de usuarios sin tarjeta o celular (mantener efectivo y recarga asistida en la transición)</li><li>Privacidad de datos de viaje</li></ul></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="full-ficha">
+          <div class="ff-head"><div class="ff-id">P6</div><div><h3>Transporte Urbano Eléctrico Financiado con Terminales de Pago Digital</h3><p>Movilidad y turismo</p></div></div>
+          <div class="ff-body">
+            <div class="ff-section"><h4><i class="fas fa-exclamation-circle"></i>Problema que atiende</h4><p>Diálogo con concesionarios sobre autobuses eléctricos iniciado en junio de 2026, sin flotas ni rutas anunciadas. Interés en Cablebús para Tuxtla; antecedente del «Conejobús» como advertencia.</p></div>
+            <div class="ff-section"><h4><i class="fas fa-lightbulb"></i>Solución propuesta</h4><p>Flota urbana eléctrica financiada y operada con el recaudo digital como garantía de pago, con un proveedor de vehículos (Auteco, a confirmar su oferta) y terminales de pago digital a bordo.</p></div>
+            <div class="ff-section"><h4><i class="fas fa-cubes"></i>Componentes clave</h4><ul class="ff-list">
+              <li>Arrendamiento o financiamiento de unidades para concesionarios actuales.</li>
+              <li>Terminales de pago digital y validadores en cada unidad (conectados con P5).</li>
+              <li>Pago por kilómetro o por pasajero para dar previsibilidad al operador.</li>
+              <li>Patio de carga con paneles solares para bajar el costo de energía (conectado con P8 y P9).</li>
+              <li>Ruta troncal urbana piloto y, si los datos lo justifican, proyecto masivo por APP (BRT o cable aéreo).</li>
+            </ul></div>
+            <div class="ff-grid-2">
+              <div class="ff-card"><h4><i class="fas fa-chart-line"></i>Impacto en economía y recaudación</h4><p>Ahorro de combustible y mantenimiento que paga el financiamiento, nuevos derechos de concesión e inversión privada en infraestructura.</p></div>
+              <div class="ff-card"><h4><i class="fas fa-users"></i>Impacto social</h4><p>Transporte más limpio, silencioso y confiable; mejor calidad del aire en la zona metropolitana.</p></div>
+            </div>
+            <div class="ff-section"><h4><i class="fas fa-handshake"></i>Modelo de contratación / negocio</h4><p>Financiamiento a concesionarios con el proveedor y la banca; operación bajo concesión o APP; el recaudo electrónico sirve de garantía. Los terminales y equipos se financian con las comisiones.</p></div>
+            <div class="ff-grid-2">
+              <div class="ff-card"><h4><i class="fas fa-coins"></i>Escala de inversión</h4><p>Alta; requiere financiamiento externo y estudio de viabilidad.</p></div>
+              <div class="ff-card"><h4><i class="fas fa-rocket"></i>Piloto sugerido</h4><p>Una ruta troncal de Tuxtla Gutiérrez con 10 a 20 unidades, después de que el recaudo electrónico esté funcionando.</p></div>
+            </div>
+            <div class="ff-grid-2">
+              <div class="ff-card"><h4><i class="fas fa-chart-bar"></i>Indicadores de éxito</h4><ul class="ff-list"><li>Unidades eléctricas en operación</li><li>Costo por kilómetro</li><li>Pasajeros por unidad</li><li>Ingresos por derechos de concesión</li><li>Emisiones evitadas</li></ul></div>
+              <div class="ff-card"><h4><i class="fas fa-exclamation-triangle"></i>Riesgos y dependencias</h4><ul class="ff-list"><li>Sensibilidad política con el gremio</li><li>Sostenibilidad de tarifas</li><li>Disponibilidad de refacciones y carga</li><li>Justificar con datos por qué esta vez será distinto del Conejobús</li></ul></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="full-ficha">
+          <div class="ff-head"><div class="ff-id">P12</div><div><h3>Pase Turístico y App del Turista (red de transporte y dinero fresco)</h3><p>Movilidad y turismo</p></div></div>
+          <div class="ff-body">
+            <div class="ff-section"><h4><i class="fas fa-exclamation-circle"></i>Problema que atiende</h4><p>Chiapas tiene activos turísticos de nivel mundial (Cañón del Sumidero, San Cristóbal, Palenque, selvas y costas), pero la experiencia está fragmentada y el gasto del visitante se captura de forma parcial.</p></div>
+            <div class="ff-section"><h4><i class="fas fa-lightbulb"></i>Solución propuesta</h4><p>Un pase turístico prepagado y una app del turista con trato especial: transporte turístico entre destinos, acceso preferente, descuentos y servicios verificados, con el visitante cargando saldo antes de llegar.</p></div>
+            <div class="ff-section"><h4><i class="fas fa-cubes"></i>Componentes clave</h4><ul class="ff-list">
+              <li>Pase prepagado de boletaje, transporte y consumo en comercios aliados.</li>
+              <li>Red de transporte turístico entre Tuxtla, Sumidero, San Cristóbal y Palenque.</li>
+              <li>Trato especial: acceso preferente, guías certificados, atención y asistencia.</li>
+              <li>App del turista con mapas, reservas, pagos, seguro de viaje y reseñas.</li>
+              <li>Recaudación: cobro digital de hospedaje y derechos turísticos.</li>
+              <li>Comisión de cada comercio aliado.</li>
+            </ul></div>
+            <div class="ff-grid-2">
+              <div class="ff-card"><h4><i class="fas fa-chart-line"></i>Impacto en economía y recaudación</h4><p>El saldo prepagado trae dinero fresco al estado; comisiones por consumo y transporte; mayor recaudación por servicios turísticos formalizados.</p></div>
+              <div class="ff-card"><h4><i class="fas fa-users"></i>Impacto social</h4><p>Ingreso para guías, artesanos y prestadores locales con pago rápido y visibilidad.</p></div>
+            </div>
+            <div class="ff-section"><h4><i class="fas fa-handshake"></i>Modelo de contratación / negocio</h4><p>Plataforma con comisión por venta del pase y por consumo; alianzas con transportistas y prestadores; posible participación del estado en los derechos turísticos.</p></div>
+            <div class="ff-grid-2">
+              <div class="ff-card"><h4><i class="fas fa-coins"></i>Escala de inversión</h4><p>Media.</p></div>
+              <div class="ff-card"><h4><i class="fas fa-rocket"></i>Piloto sugerido</h4><p>Una ruta turística (Tuxtla–Sumidero–San Cristóbal) en temporada alta.</p></div>
+            </div>
+            <div class="ff-grid-2">
+              <div class="ff-card"><h4><i class="fas fa-chart-bar"></i>Indicadores de éxito</h4><ul class="ff-list"><li>Pases vendidos</li><li>Gasto por turista</li><li>Ocupación</li><li>Ingresos por comisión</li><li>Satisfacción</li></ul></div>
+              <div class="ff-card"><h4><i class="fas fa-exclamation-triangle"></i>Riesgos y dependencias</h4><ul class="ff-list"><li>Estacionalidad</li><li>Coordinación con prestadores y transportistas</li><li>Seguridad de rutas turísticas</li><li>Competencia con plataformas de reserva existentes</li></ul></div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- ECONOMIA -->
+    <div class="pf-category">
+      <div class="pf-cat-head"><div class="pf-cat-icon"><i class="fas fa-store"></i></div><div><h3 class="pf-cat-title">Economía Local y Pagos</h3><p class="pf-cat-sub">P7 — la puerta de entrada del ecosistema</p></div></div>
+      <div class="pf-fichas">
+        <article class="full-ficha">
+          <div class="ff-head"><div class="ff-id">P7</div><div><h3>Red de POS Comunitario: Autocobro en Tortillerías y Abarrotes</h3><p>Puerta de entrada del ecosistema de pagos y servicios</p></div></div>
+          <div class="ff-body">
+            <div class="ff-section"><h4><i class="fas fa-exclamation-circle"></i>Problema que atiende</h4><p>Según Banxico, entre 80% y 90% de los pagos en Chiapas y Oaxaca son en efectivo. Abarrotes y tortillerías son el comercio de mayor cercanía a la población, pero operan sin pagos digitales, sin acceso a crédito formal y con cadenas de proveeduría largas.</p></div>
+            <div class="ff-section"><h4><i class="fas fa-lightbulb"></i>Solución propuesta</h4><p>Red de POS gratuitos para abarrotes y tortillerías que permite cobrar pagos digitales, recibir pagos de trámites, servicios y recargas, y conectarse con la producción local para surtir sus tiendas, con una comisión privada de centavos por operación.</p></div>
+            <div class="ff-section"><h4><i class="fas fa-cubes"></i>Componentes clave</h4><ul class="ff-list">
+              <li>POS gratuito en comodato: sin costo para el comercio; financiado con las comisiones.</li>
+              <li>Autocobro: el ciudadano paga trámites, derechos, agua, luz, recargas y remesas en la tienda de barrio.</li>
+              <li>Licencia de operación con el ayuntamiento mediante convenio de recaudación.</li>
+              <li>Proveeduría local: conexión con productores locales, rutas de surtido y QR por punto de venta, para impulsar el consumo interno y la marca «Hecho en Chiapas».</li>
+              <li>Crédito de capital de trabajo basado en el historial de ventas del POS, con banca aliada.</li>
+              <li>Inteligencia de mercado: base nacional de negocios (DENUE) para dimensionar la red y priorizar municipios.</li>
+            </ul></div>
+            <div class="ff-grid-2">
+              <div class="ff-card"><h4><i class="fas fa-chart-line"></i>Impacto en economía y recaudación</h4><p>Ingresos por comisión sin costo para el gobierno; más circulación de dinero local; formalización gradual de micronegocios; menos fuga de efectivo en trámites.</p></div>
+              <div class="ff-card"><h4><i class="fas fa-users"></i>Impacto social</h4><p>Pagos y servicios cerca de casa, menos traslados y filas, crédito para el pequeño comerciante y mejor precio de surtido.</p></div>
+            </div>
+            <div class="ff-section"><h4><i class="fas fa-handshake"></i>Modelo de contratación / negocio</h4><p>Comisión privada por operación (centavos) con bancos aliados; hardware financiado con las comisiones; posible ingreso adicional por proveeduría y crédito. Trámites con cada ayuntamiento y la banca aliada.</p></div>
+            <div class="ff-grid-2">
+              <div class="ff-card"><h4><i class="fas fa-coins"></i>Escala de inversión</h4><p>Baja a media; la recuperación del equipo depende del volumen de operaciones por comercio.</p></div>
+              <div class="ff-card"><h4><i class="fas fa-rocket"></i>Piloto sugerido</h4><p>Una zona de Tuxtla Gutiérrez con 200 a 500 comercios durante 4 a 6 meses, y después Tapachula y San Cristóbal.</p></div>
+            </div>
+            <div class="ff-grid-2">
+              <div class="ff-card"><h4><i class="fas fa-chart-bar"></i>Indicadores de éxito</h4><ul class="ff-list"><li>Comercios activos</li><li>Operaciones al día</li><li>Meses de recuperación del equipo</li><li>Pagos municipales recibidos</li><li>Pedidos a productores locales</li><li>Créditos otorgados</li></ul></div>
+              <div class="ff-card"><h4><i class="fas fa-exclamation-triangle"></i>Riesgos y dependencias</h4><ul class="ff-list"><li>Competencia de terminales ya existentes (Mercado Pago, Clip y bancos)</li><li>Temor del comerciante a la visibilidad fiscal</li><li>Autorización financiera si los fondos pasan por cuentas propias (conviene banco aliado)</li><li>Seguridad del personal que instala y da soporte</li></ul></div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- SERVICIOS -->
+    <div class="pf-category">
+      <div class="pf-cat-head"><div class="pf-cat-icon"><i class="fas fa-droplet"></i></div><div><h3 class="pf-cat-title">Servicios Básicos y Energía</h3><p class="pf-cat-sub">P8 · P9 · P10</p></div></div>
+      <div class="pf-fichas">
+
+        <article class="full-ficha">
+          <div class="ff-head"><div class="ff-id">P8</div><div><h3>Agua Inteligente y Energía Solar para Bombas</h3><p>Servicios básicos y energía</p></div></div>
+          <div class="ff-body">
+            <div class="ff-section"><h4><i class="fas fa-exclamation-circle"></i>Problema que atiende</h4><p>Organismos operadores con cobro deficiente, facturación por promedio, tomas clandestinas y cartera vencida; el consumo eléctrico de las bombas es gasto principal (dato por validar). Quejas por desabasto y recargos en Tuxtla. El agua es competencia municipal y derecho humano, con mínimo vital.</p></div>
+            <div class="ff-section"><h4><i class="fas fa-lightbulb"></i>Solución propuesta</h4><p>Optimizar el servicio de pago del agua con medidores digitales, prepago o postpago por QR, pago en la red de POS (P7) y credencial QR, junto con plantas solares para abastecer las bombas y reducir el recibo de luz.</p></div>
+            <div class="ff-section"><h4><i class="fas fa-cubes"></i>Componentes clave</h4><ul class="ff-list">
+              <li>Medidores inteligentes con lectura remota y alertas de fuga y manipulación.</li>
+              <li>Pago por QR, tarjeta RFID/NFC o en la red de POS; prepago voluntario.</li>
+              <li>Mínimo vital gratuito y restricción de caudal en lugar de corte total.</li>
+              <li>Sensores de presión y continuidad para no cobrar servicio no entregado.</li>
+              <li>Plantas solares para bombas, financiadas con el ahorro de electricidad.</li>
+              <li>Programa de regularización de tomas con convenios de pago.</li>
+            </ul></div>
+            <div class="ff-grid-2">
+              <div class="ff-card"><h4><i class="fas fa-chart-line"></i>Impacto en economía y recaudación</h4><p>Mejora el cobro, reduce pérdidas y baja el mayor gasto energético de la operación; el ahorro puede financiar la inversión.</p></div>
+              <div class="ff-card"><h4><i class="fas fa-users"></i>Impacto social</h4><p>Cobro justo por consumo real, detección de fugas y mejor continuidad del servicio.</p></div>
+            </div>
+            <div class="ff-section"><h4><i class="fas fa-handshake"></i>Modelo de contratación / negocio</h4><p>Convenio con cada organismo operador y esquema de ahorro compartido o arrendamiento de la infraestructura solar y de medición, financiado con el ahorro y el incremento de cobro.</p></div>
+            <div class="ff-grid-2">
+              <div class="ff-card"><h4><i class="fas fa-coins"></i>Escala de inversión</h4><p>Media a alta (equipos solares y medidores).</p></div>
+              <div class="ff-card"><h4><i class="fas fa-rocket"></i>Piloto sugerido</h4><p>Un sistema de bombeo de Tuxtla con medición a grandes consumidores y comercios, y prepago solo voluntario en hogares.</p></div>
+            </div>
+            <div class="ff-grid-2">
+              <div class="ff-card"><h4><i class="fas fa-chart-bar"></i>Indicadores de éxito</h4><ul class="ff-list"><li>Ahorro de energía (kWh y pesos)</li><li>Agua facturada contra producida</li><li>Cartera vencida</li><li>Horas de servicio continuo</li></ul></div>
+              <div class="ff-card"><h4><i class="fas fa-exclamation-triangle"></i>Riesgos y dependencias</h4><ul class="ff-list"><li>Sensibilidad social y legal del cobro de agua</li><li>Calidad de la red</li><li>Robo de paneles y medidores</li><li>Dependencia del convenio municipal</li></ul></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="full-ficha">
+          <div class="ff-head"><div class="ff-id">P9</div><div><h3>Financiamiento Energético para Ayuntamientos (luz, alumbrado y bombeo)</h3><p>Servicios básicos y energía</p></div></div>
+          <div class="ff-body">
+            <div class="ff-section"><h4><i class="fas fa-exclamation-circle"></i>Problema que atiende</h4><p>Los ayuntamientos destinan parte relevante de su presupuesto a la factura de electricidad del alumbrado público, edificios y bombeo de agua, y no siempre cuentan con liquidez para modernizar su consumo.</p></div>
+            <div class="ff-section"><h4><i class="fas fa-lightbulb"></i>Solución propuesta</h4><p>Programa de crédito y ahorro compartido para que los ayuntamientos reduzcan su consumo eléctrico con luminarias LED, medición inteligente y energía solar, pagando el financiamiento con el ahorro generado.</p></div>
+            <div class="ff-section"><h4><i class="fas fa-cubes"></i>Componentes clave</h4><ul class="ff-list">
+              <li>Diagnóstico energético municipal y línea base de consumo.</li>
+              <li>Sustitución por luminarias LED con control remoto.</li>
+              <li>Solar para edificios y bombeo (conectado con P8).</li>
+              <li>Crédito con banca aliada o esquema de ahorro compartido, con pago atado al ahorro.</li>
+              <li>Tablero de consumo y pagos por municipio.</li>
+            </ul></div>
+            <div class="ff-grid-2">
+              <div class="ff-card"><h4><i class="fas fa-chart-line"></i>Impacto en economía y recaudación</h4><p>Libera presupuesto municipal, reduce deuda con la empresa eléctrica y abre un mercado de crédito y servicios energéticos.</p></div>
+              <div class="ff-card"><h4><i class="fas fa-users"></i>Impacto social</h4><p>Calles mejor iluminadas y servicios públicos más estables.</p></div>
+            </div>
+            <div class="ff-section"><h4><i class="fas fa-handshake"></i>Modelo de contratación / negocio</h4><p>Ahorro compartido, arrendamiento o crédito con banca aliada. Debe revisarse con un abogado cómo se clasifica frente a las reglas de deuda pública municipal.</p></div>
+            <div class="ff-grid-2">
+              <div class="ff-card"><h4><i class="fas fa-coins"></i>Escala de inversión</h4><p>Media; se financia con el propio ahorro.</p></div>
+              <div class="ff-card"><h4><i class="fas fa-rocket"></i>Piloto sugerido</h4><p>Dos o tres municipios con alumbrado y bombeo relevantes, durante 6 a 12 meses.</p></div>
+            </div>
+            <div class="ff-grid-2">
+              <div class="ff-card"><h4><i class="fas fa-chart-bar"></i>Indicadores de éxito</h4><ul class="ff-list"><li>Ahorro energético y monetario</li><li>Reducción del adeudo</li><li>Luminarias modernizadas</li><li>Cumplimiento de pagos</li></ul></div>
+              <div class="ff-card"><h4><i class="fas fa-exclamation-triangle"></i>Riesgos y dependencias</h4><ul class="ff-list"><li>Capacidad de pago y autorizaciones de los municipios</li><li>Reglas de deuda pública</li><li>Cambios tarifarios</li></ul></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="full-ficha">
+          <div class="ff-head"><div class="ff-id">P10</div><div><h3>Conectividad Comunitaria con Internet Satelital a Demanda</h3><p>Línea de negocio aparte · Servicios básicos y energía</p></div></div>
+          <div class="ff-body">
+            <div class="ff-section"><h4><i class="fas fa-exclamation-circle"></i>Problema que atiende</h4><p>Muchas comunidades rurales y poblados dispersos no tienen internet fijo o es muy caro, lo que limita educación, comercio y acceso a trámites digitales.</p></div>
+            <div class="ff-section"><h4><i class="fas fa-lightbulb"></i>Solución propuesta</h4><p>Puntos de internet comunitario con tecnología satelital (Starlink), vendido a demanda en paquetes prepagados por tiempo o por datos, operados por un microemprendedor local, como línea de negocio independiente.</p></div>
+            <div class="ff-section"><h4><i class="fas fa-cubes"></i>Componentes clave</h4><ul class="ff-list">
+              <li>Puntos Wi-Fi comunitarios con venta de acceso prepagado.</li>
+              <li>Distribución de vouchers por la red de POS comunitaria (P7).</li>
+              <li>Clientes ancla: escuelas, centros comunitarios y oficinas municipales.</li>
+              <li>Capacitación del operador local y soporte técnico.</li>
+            </ul></div>
+            <div class="ff-grid-2">
+              <div class="ff-card"><h4><i class="fas fa-chart-line"></i>Impacto en economía y recaudación</h4><p>Ingreso por venta de acceso y empleo local; habilita el comercio y los trámites digitales en comunidades.</p></div>
+              <div class="ff-card"><h4><i class="fas fa-users"></i>Impacto social</h4><p>Acceso a información, educación y servicios en zonas aisladas.</p></div>
+            </div>
+            <div class="ff-section"><h4><i class="fas fa-handshake"></i>Modelo de contratación / negocio</h4><p>Empresa independiente tipo proveedor de internet inalámbrico (WISP) con comisión por voucher; se coordina con programas federales de conectividad. Deben confirmarse la regulación y los costos vigentes del servicio satelital.</p></div>
+            <div class="ff-grid-2">
+              <div class="ff-card"><h4><i class="fas fa-coins"></i>Escala de inversión</h4><p>Media; los equipos se recuperan con la venta de acceso.</p></div>
+              <div class="ff-card"><h4><i class="fas fa-rocket"></i>Piloto sugerido</h4><p>20 a 50 poblados con baja conectividad en una región.</p></div>
+            </div>
+            <div class="ff-grid-2">
+              <div class="ff-card"><h4><i class="fas fa-chart-bar"></i>Indicadores de éxito</h4><ul class="ff-list"><li>Puntos activos</li><li>Usuarios y horas de uso</li><li>Ingreso por punto</li><li>Conexión de escuelas</li></ul></div>
+              <div class="ff-card"><h4><i class="fas fa-exclamation-triangle"></i>Riesgos y dependencias</h4><ul class="ff-list"><li>Costo del servicio satelital y del equipo</li><li>Energía en comunidades</li><li>Regulación</li><li>Competencia con programas gratuitos</li></ul></div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7 RECAUDACION -->
+<section id="recaudacion" class="section">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-badge">7</div>
+      <h2 class="sec-title">Palancas de Recaudación y Lógica Económica</h2>
+    </div>
+    <div class="table-wrap">
+      <div class="table-title"><i class="fas fa-key"></i> Las cuatro palancas</div>
+      <div class="table-scroll"><table class="data-table">
+        <thead><tr><th>Palanca</th><th>Qué cambia</th><th>Proyectos</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Ampliar la base</strong></td><td>Detectar y regularizar contribuyentes omisos con cruce de padrones y ruta de formalización gradual para micronegocios</td><td>P4, P7, P12</td></tr>
+          <tr><td><strong>Elevar el cumplimiento</strong></td><td>Pago fácil por QR, recordatorios, puntos de pago de barrio y cobro en línea de derechos, refrendos y multas</td><td>P1, P2, P4, P7, P11</td></tr>
+          <tr><td><strong>Reducir costo y fuga</strong></td><td>Menos efectivo, menos intermediación y menor discrecionalidad; recibo de luz más bajo con solar y LED</td><td>P1, P2, P5, P8, P9</td></tr>
+          <tr><td><strong>Crear ingresos por servicios y concesiones</strong></td><td>Derechos de concesión, comisiones privadas, servicios registrales y catastrales, pase turístico y ahorro compartido</td><td>P3, P5, P6, P7, P8, P12</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+
+    <div class="formula-box">Incremento = Recaudación base × (Cumplimiento objetivo − Cumplimiento actual) + Ingresos por nuevos servicios − Costo del proyecto</div>
+
+    <div class="scen-grid">
+      <div class="scen-card cons"><div class="scen-name">Conservador</div><div class="scen-num">+3%</div><p style="color:var(--gray-600);font-size:.9rem;">Solo mejora de cobro y menor fuga en trámites digitalizados</p></div>
+      <div class="scen-card base"><div class="scen-name">Base</div><div class="scen-num">+6%</div><p style="color:var(--gray-600);font-size:.9rem;">Incluye regularización de omisos y puntos de pago de barrio</p></div>
+      <div class="scen-card amb"><div class="scen-name">Ambicioso</div><div class="scen-num">+10%</div><p style="color:var(--gray-600);font-size:.9rem;">Suma formalización, concesiones nuevas y registro y catastro actualizados</p></div>
+    </div>
+    <p style="text-align:center;color:var(--gray-600);margin-top:1rem;">Porcentajes hipótesis de trabajo sobre la base de ingresos propios digitalizable; no constituyen proyección. Primer entregable: línea base con datos reales.</p>
+  </div>
+</section>
+
+<!-- 8 CONTRATACION -->
+<section id="contratacion" class="section section-alt">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-badge">8</div>
+      <h2 class="sec-title">Esquemas de Contratación y Marco Jurídico</h2>
+    </div>
+    <div class="table-wrap">
+      <div class="table-title"><i class="fas fa-file-contract"></i> 8.1 Modalidades posibles</div>
+      <div class="table-scroll"><table class="data-table">
+        <thead><tr><th>Modalidad</th><th>Cuándo conviene</th><th>Consideraciones</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Contrato de servicios / licenciamiento (SaaS)</strong></td><td>Ventanilla, app de gobierno, licencia digital</td><td>Rápida implementación; costo predecible; resguardar la propiedad de los datos para el Estado</td></tr>
+          <tr><td><strong>Comisión privada por operación</strong></td><td>Red de POS, recaudo de transporte, pase turístico</td><td>No genera gasto para el gobierno; requiere convenio, reglas de tarifas y niveles de servicio</td></tr>
+          <tr><td><strong>Ahorro compartido o arrendamiento</strong></td><td>Solar para bombas, luminarias, medidores</td><td>El pago depende del ahorro verificado; requiere línea base y auditoría independiente</td></tr>
+          <tr><td><strong>Concesión o APP</strong></td><td>Recaudo electrónico, transporte masivo, estacionamiento</td><td>Requiere estudio de viabilidad, procedimiento y revisión de la ley estatal aplicable</td></tr>
+          <tr><td><strong>Crédito con banca aliada</strong></td><td>Capital de trabajo a comercios, financiamiento a ayuntamientos y concesionarios</td><td>Revisar reglas de deuda pública municipal y de operación bancaria</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+    <div class="table-wrap">
+      <div class="table-title"><i class="fas fa-scale-balanced"></i> 8.2 Marco normativo a revisar</div>
+      <div class="table-scroll"><table class="data-table"><tbody>
+        <tr><td>Constitución Política del Estado y Ley de Gobierno Digital (Agencia Digital Tecnológica); Ley de Firma Electrónica Avanzada</td></tr>
+        <tr><td>Ley de Movilidad y Transporte y su reglamento (concesiones, tarifas, plataformas)</td></tr>
+        <tr><td>Código de la Hacienda Pública y Ley de Ingresos; convenios de colaboración en materia fiscal federal</td></tr>
+        <tr><td>Normativa registral y catastral; reglamento del Registro Público; ley del notariado</td></tr>
+        <tr><td>Marco de agua potable (competencia municipal y derecho humano) y organismos operadores</td></tr>
+        <tr><td>Normativa financiera de pagos, corresponsales y comisiones; operar con banco aliado titular de los fondos</td></tr>
+        <tr><td>Reglas de deuda pública municipal (Ley de Disciplina Financiera y normativa estatal)</td></tr>
+        <tr><td>Normativa de telecomunicaciones para internet satelital comunitario</td></tr>
+        <tr><td>Iniciativa de Ley de Economía Digital y disposiciones Banxico (SPEI, CoDi), a vigilar</td></tr>
+        <tr><td>Leyes de adquisiciones, obra pública y APP; transparencia y protección de datos personales</td></tr>
+      </tbody></table></div>
+    </div>
+    <p style="text-align:center;color:var(--gray-600);">Recomendación: un despacho jurídico local debe confirmar el esquema de cada proyecto antes de la presentación formal.</p>
+  </div>
+</section>
+
+
+<!-- 10 VALOR -->
+<section id="valor" class="section section-alt">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-badge">10</div>
+      <h2 class="sec-title">Valor Político e Institucional</h2>
+      <p class="sec-sub">Resultados que se comunican con claridad y son compatibles con la agenda de gobierno</p>
+    </div>
+    <div class="table-wrap">
+      <div class="table-title"><i class="fas fa-star"></i> Mensajes y resultados</div>
+      <div class="table-scroll"><table class="data-table">
+        <thead><tr><th>Resultado</th><th>Mensaje</th></tr></thead>
+        <tbody>
+          <tr><td>Resultados tangibles y medibles</td><td>«Tu trámite desde el celular», «tu escritura protegida con alerta digital», «paga en la tienda de la esquina»</td></tr>
+          <tr><td>Combate a la corrupción e intermediarios</td><td>Menos contacto discrecional y trazabilidad de cada operación</td></tr>
+          <tr><td>Economía de barrio</td><td>El abarrote y la tortillería como motores de pagos, crédito y consumo de producción local</td></tr>
+          <tr><td>Modernización visible</td><td>Transporte urbano eléctrico, credencial QR y servicios ordenados, en línea con el interés en proyectos de transporte de alta capacidad</td></tr>
+          <tr><td>Finanzas más sólidas</td><td>Ahorro energético y mayor cobro que permiten financiar obra y programas sin depender solo de transferencias</td></tr>
+          <tr><td>Turismo con dinero fresco</td><td>Un pase turístico que atrae gasto antes de la llegada del visitante</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+    <p style="text-align:center;color:var(--gray-600);">Se recomienda calendarizar anuncios por hitos medibles y reportar con datos verificables, para que las expectativas no superen la capacidad de entrega.</p>
+  </div>
+</section>
+
+<!-- 11 RIESGOS -->
+<section id="riesgos" class="section">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-badge">11</div>
+      <h2 class="sec-title">Riesgos y Mitigación</h2>
+    </div>
+    <div class="table-wrap">
+      <div class="table-title"><i class="fas fa-triangle-exclamation"></i> Matriz de riesgos</div>
+      <div class="table-scroll"><table class="data-table">
+        <thead><tr><th>Riesgo</th><th>Probabilidad / Impacto</th><th>Mitigación</th></tr></thead>
+        <tbody>
+          <tr><td>Brecha digital y baja conectividad</td><td><strong>Alta / Alta</strong></td><td>Atención asistida en comercios y módulos, lenguas originarias, efectivo en la transición e internet comunitario (P10)</td></tr>
+          <tr><td>Resistencia de gremios e intermediarios</td><td>Media / Alta</td><td>Consulta temprana, transición gradual, beneficios claros y reglas transparentes</td></tr>
+          <tr><td>Competencia en terminales y temor a visibilidad fiscal</td><td><strong>Alta / Media</strong></td><td>Diferenciarse por trámites municipales, proveeduría local y crédito; formalización gradual</td></tr>
+          <tr><td>Autorización financiera y regulación de pagos</td><td>Media / Alta</td><td>Banco aliado como titular de fondos; opinión jurídica previa</td></tr>
+          <tr><td>Rechazo social por cobro de agua en desabasto</td><td>Media / <strong>Muy alta</strong></td><td>Mínimo vital, restricción de caudal en lugar de corte, sensores de continuidad y prepago voluntario</td></tr>
+          <tr><td>Ciberseguridad y privacidad</td><td>Media / <strong>Muy alta</strong></td><td>Arquitectura segura, cifrado, auditorías y gobernanza con la Agencia Digital; relevo TURN para denuncias</td></tr>
+          <tr><td>Seguridad de operación en campo</td><td>Media / Alta</td><td>Protocolos, coordinación con autoridades y pagos digitales en lugar de efectivo</td></tr>
+          <tr><td>Capacidad de pago y reglas de deuda municipal</td><td>Media / Media</td><td>Ahorro compartido atado al ahorro verificado y revisión jurídica</td></tr>
+          <tr><td>Que la iniciativa federal cambie o no se apruebe</td><td>Media / Media</td><td>Estándares abiertos y valor propio de cada proyecto; vigilar el trámite legislativo</td></tr>
+          <tr><td>Percepción de conflicto de interés</td><td>Media / Alta</td><td>Procedimientos transparentes, comisiones publicadas y auditoría externa</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+  </div>
+</section>
+
+<!-- 12 ACERCAMIENTO -->
+<section id="acercamiento" class="section section-alt">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-badge">12</div>
+      <h2 class="sec-title">Plan de Acercamiento y Siguientes Pasos</h2>
+    </div>
+    <div class="anexos-grid">
+      <div class="table-wrap">
+        <div class="table-title"><i class="fas fa-list-check"></i> 12.1 Cómo presentar la propuesta</div>
+        <div class="table-scroll"><table class="data-table"><tbody>
+          <tr><td>Presentación ejecutiva (15 min) al Gobernador: diagnóstico, ecosistema y 3 proyectos de arranque</td></tr>
+          <tr><td>Sesión técnica con Hacienda, Agencia Digital, Consejería Jurídica, Movilidad, municipios y organismos de agua</td></tr>
+          <tr><td>Convenio de diagnóstico y piloto de alcance acotado con indicadores de salida</td></tr>
+          <tr><td>Escalamiento por olas según resultados y disponibilidad</td></tr>
+        </tbody></table></div>
+      </div>
+      <div class="table-wrap">
+        <div class="table-title"><i class="fas fa-hand-point-left"></i> 12.2 Información que se solicitaría al Estado</div>
+        <div class="table-scroll"><table class="data-table"><tbody>
+          <tr><td>Serie histórica de ingresos propios por concepto (2022–2026) y metas de recaudación</td></tr>
+          <tr><td>Padrones vigentes: vehículos, concesiones, nómina, hospedaje, negocios</td></tr>
+          <tr><td>Inventario de sistemas, bases de datos y contratos tecnológicos vigentes</td></tr>
+          <tr><td>Estado de digitalización del Registro Público, Registro Civil y Catastro</td></tr>
+          <tr><td>Facturación eléctrica de bombeo y alumbrado; cartera de agua por organismo</td></tr>
+        </tbody></table></div>
+      </div>
+    </div>
+    <div class="msg-box">
+      <i class="fas fa-bullhorn" aria-hidden="true"></i>
+      <p>«Proponemos un Chiapas con trámites sencillos, pagos en la tienda de la esquina, servicios básicos más eficientes y un turismo que trae dinero fresco, con un plan hasta 2030 financiado en buena medida por comisiones y ahorros, y no por presupuesto estatal.»</p>
+      <span class="attrib">12.3 Mensaje central</span>
+    </div>
+  </div>
+</section>
+
+<!-- ANEXOS -->
+<section id="anexos" class="section">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-badge">A·B·C</div>
+      <h2 class="sec-title">Anexos</h2>
+    </div>
+
+    <div class="anexos-grid">
+      <div class="table-wrap">
+        <div class="table-title"><i class="fas fa-clipboard-question"></i> Anexo A · Cuestionario de sondeo para las dependencias</div>
+        <div class="table-scroll"><table class="data-table">
+          <thead><tr><th>Área</th><th>Preguntas clave</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Hacienda estatal</strong></td><td>Composición de ingresos propios y su tendencia · conceptos con mayor evasión o rezago · convenios con SAT y municipios · % de pagos digital</td></tr>
+            <tr><td><strong>Agencia Digital Tecnológica</strong></td><td>Plataformas e infraestructura (nube, firma electrónica) · trámites ya 100% digitales · estándares de interoperabilidad y seguridad</td></tr>
+            <tr><td><strong>Registro Público, Registro Civil y Catastro</strong></td><td>% del acervo digitalizado · tiempos de inscripción y emisión · cobertura del catastro</td></tr>
+            <tr><td><strong>Movilidad y Transporte</strong></td><td>Concesiones y permisos vigentes · cómo se recauda hoy y qué fugas · estado de la aportación de plataformas y del transporte masivo</td></tr>
+            <tr><td><strong>Ayuntamientos y organismos de agua</strong></td><td>Facturación eléctrica de bombeo y alumbrado · usuarios con medidor y cartera vencida · convenios de recaudación</td></tr>
+            <tr><td><strong>Economía y Turismo</strong></td><td>Padrón de negocios, productores y prestadores turísticos · comercialización de café, cacao y artesanías</td></tr>
+            <tr><td><strong>Atención ciudadana y Protección Civil</strong></td><td>Canales de atención, denuncia y alertamiento · coordinación con el 911</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+
+      <div class="table-wrap">
+        <div class="table-title"><i class="fas fa-seedling"></i> Anexo C · Líneas de crecimiento futuras</div>
+        <div class="table-scroll"><table class="data-table">
+          <thead><tr><th>Idea</th><th>Descripción</th><th>Relación</th></tr></thead>
+          <tbody>
+            <tr><td>Seguros agrícolas con datos satelitales</td><td>Seguro paramétrico para café, maíz y cacao ante sequía o lluvia extrema, vendido en la red de POS</td><td>P7</td></tr>
+            <tr><td>Precios y trazabilidad de café y cacao</td><td>Precios en tiempo real, trazabilidad por QR y certificación para exportación</td><td>P7, P12</td></tr>
+            <tr><td>Remesas y envíos de dinero</td><td>Envío y cobro en abarrotes y tortillerías, con comisión</td><td>P7</td></tr>
+            <tr><td>Alumbrado público inteligente</td><td>Luminarias LED con control remoto y medición</td><td>P9</td></tr>
+            <tr><td>Energía solar comunitaria</td><td>Paneles en comunidades sin red y esquemas de pago por uso</td><td>P8, P10</td></tr>
+            <tr><td>Recolección de basura con rutas optimizadas</td><td>Rutas y contenedores con sensores, reportes desde la app</td><td>P11</td></tr>
+            <tr><td>Servicios ambientales y monitoreo de incendios</td><td>Pago por conservación y vigilancia satelital de deforestación</td><td>P12</td></tr>
+            <tr><td>Facturación simplificada para micronegocios</td><td>Emisión de comprobantes y cumplimiento básico desde el celular</td><td>P4, P7</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <div class="table-title"><i class="fas fa-book-open-reader"></i> Anexo B · Fuentes consultadas</div>
+      <div class="table-scroll"><table class="data-table"><tbody>
+        <tr><td>INEGI. Medición de pobreza multidimensional 2024 (ENIGH 2024), agosto 2025; análisis de BBVA Research, México ¿Cómo Vamos? y prensa especializada</td></tr>
+        <tr><td>Milenio. Constancia de mayorìa a Eduardo Ramírez Aguilar como gobernador electo (2024-2030); síntesis de la Cámara de Diputados (La Razón, Reforma, El Universal, Latinus)</td></tr>
+        <tr><td>La Razón. Visita al Cablebús CDMX y proyecto de modernización de Tuxtla Gutiérrez</td></tr>
+        <tr><td>Ley de Gobierno Digital del Estado; Constitución local (art. 70); Ley de Firma Electrónica Avanzada; Acuerdo de simplificación del Registro Civil 2025; POSTA México (falsificación de documentos)</td></tr>
+        <tr><td>Ley de Ingresos 2026 y Código de la Hacienda Pública; Reglamento del Registro Público; guías de trámites del certificado de libertad de gravamen</td></tr>
+        <tr><td>Ley de Movilidad y Transporte; 1,854 concesiones de taxi (ene 2023); encuentro sobre electromovilidad (29 jun 2026); nota feb 2026 sobre 1.5% a plataformas (por confirmar)</td></tr>
+        <tr><td>Proyectos México (SHCP). Ficha de concesión del Aeropuerto de Tuxtla (rev. 30/06/2026)</td></tr>
+        <tr><td>Centro México Digital. Índice de Desarrollo Digital Estatal 2021 (DPL News)</td></tr>
+        <tr><td>Instituto Registral y Catastral de Nuevo León, presentación SEDATU 2025 (referencia comparada)</td></tr>
+        <tr><td>SIAPA (Jalisco), SADM (Monterrey) y Sideapa (Gómez Palacio) como referencias de medición y cobro de agua</td></tr>
+        <tr><td>Banxico, Bloomberg Línea, Expansión, DPL News y N+: reformas al SPEI, CoDi, pagos digitales obligatorios e iniciativa de Ley de Economía Digital (2026)</td></tr>
+      </tbody></table></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="nav-logo" style="margin-bottom:1rem;">
+          <div class="logo-icon"><i class="fas fa-landmark"></i></div>
+          <div><div class="logo-title">Chiapas Digital y Próspero</div><div class="logo-sub">Propuesta Estratégica v4.0</div></div>
+        </div>
+        <p class="footer-desc">Estudio de oportunidades y portafolio de proyectos para el Gobierno del Estado de Chiapas. Documento para consideración de las autoridades; decision la adopción, alcance y forma de cada proyecto.</p>
+      </div>
+      <div><h4>Secciones</h4><ul class="footer-links">
+        <li><a href="#resumen">Resumen ejecutivo</a></li><li><a href="#diagnostico">Diagnóstico</a></li>
+        <li><a href="#portafolio">Portafolio P1–P12</a></li><li><a href="#riesgos">Riesgos</a></li>
+      </ul></div>
+      <div><h4>Proyectos clave</h4><ul class="footer-links">
+        <li><a href="#portafolio">P7 · Red de POS</a></li><li><a href="#portafolio">P4 · Motor de recaudación</a></li>
+        <li><a href="#portafolio">P3 · Registro y catastro</a></li><li><a href="#portafolio">P12 · Pase turístico</a></li>
+      </ul></div>
+      <div><h4>Informe</h4><ul class="footer-links">
+        <li><span><i class="fas fa-file-signature"></i> Versión 4.0</span></li>
+        <li><span><i class="fas fa-calendar"></i> Octubre 2026</span></li>
+        <li><span><i class="fas fa-lock"></i> Confidencial</span></li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Chiapas Digital y Próspero · Propuesta basada en fuentes públicas; las cifras fiscales y operativas internas deben validarse con las dependencias antes de cualquier decisión.</p>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
