@@ -51,16 +51,44 @@
     <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
     <ul class="nav-menu" id="navMenu">
       <li><a href="#inicio" class="nav-link">Inicio</a></li>
+      <li class="nav-group"><a href="#resumen" class="nav-link">Propuesta <i class="fas fa-chevron-down chev"></i></a>
+        <ul class="drop">
+          <li><a href="#resumen">1 · Resumen Ejecutivo</a></li>
+          <li><a href="#alcance">2 · Alcance y Metodología</a></li>
+          <li><a href="#arquitectura">4 · Arquitectura y lineamientos</a></li>
+        </ul>
+      </li>
       <li><a href="#diagnostico" class="nav-link">Diagnóstico</a></li>
-      <li><a href="#portafolio" class="nav-link">Portafolio P1–P12</a></li>
-      <li><a href="#glosario" class="nav-link">Glosario</a></li>
-      <li><a href="#ruta" class="nav-link">Hoja de Ruta</a></li>
-      <li><a href="#recaudacion" class="nav-link">Recaudación</a></li>
-      <li><a href="#contratacion" class="nav-link">Contratación</a></li>
-      <li><a href="#riesgos" class="nav-link">Riesgos</a></li>
-      <li><a href="#csi" class="nav-link">Grupo CSI</a></li>
-      <li><a href="#acercamiento" class="nav-link">Acercamiento</a></li>
-      <li><a href="#anexos" class="nav-link">Anexos</a></li>
+      <li class="nav-group"><a href="#portafolio" class="nav-link">Portafolio <i class="fas fa-chevron-down chev"></i></a>
+        <ul class="drop">
+          <li><a href="#mapa">5 · Mapa de oportunidades</a></li>
+          <li><strong>Gobierno digital</strong></li>
+          <li><a href="#p1">P1 · Ventanilla única</a></li>
+          <li><a href="#p3">P3 · Registro y catastro</a></li>
+          <li><a href="#portafolio">Ver las 5 del frente ▸</a></li>
+          <li><strong>Movilidad y turismo</strong></li>
+          <li><a href="#portafolio">P5 · P6 · P12 ▸ fichas</a></li>
+          <li><strong>Economía local</strong></li>
+          <li><a href="#economia">P7 · Red de POS</a></li>
+          <li><strong>Servicios y energía</strong></li>
+          <li><a href="#portafolio">P8 · P9 · P10 ▸ fichas</a></li>
+        </ul>
+      </li>
+      <li class="nav-group"><a href="#ruta" class="nav-link">Plan <i class="fas fa-chevron-down chev"></i></a>
+        <ul class="drop">
+          <li><a href="#ruta">9 · Priorización y hitos</a></li>
+          <li><a href="#valor">10 · Valor político</a></li>
+          <li><a href="#csi">Grupo CSI · socio estratégico</a></li>
+          <li><a href="#acercamiento">Plan de acercamiento ▸</a></li>
+        </ul>
+      </li>
+      <li class="nav-group"><a href="#" class="nav-link">Recursos <i class="fas fa-chevron-down chev"></i></a>
+        <ul class="drop">
+          <li><a href="#glosario">Glosario de términos</a></li>
+          <li><a href="#anexos">Anexos A · B · C</a></li>
+        </ul>
+      </li>
+      <li><a href="#acercamiento" class="btn-nav">Presentar al Gobernador</a></li>
     </ul>
   </div>
 </nav>
@@ -300,11 +328,11 @@
     </div>
 
     <!-- GOBIERNO DIGITAL -->
-    <div class="pf-category">
+    <div class="pf-category" id="gobierno">
       <div class="pf-cat-head"><div class="pf-cat-icon"><i class="fas fa-landmark"></i></div><div><h3 class="pf-cat-title">Gobierno Digital y Recaudación</h3><p class="pf-cat-sub">P1 · P2 · P3 · P4 · P11</p></div></div>
       <div class="pf-fichas">
 
-        <article class="full-ficha">
+        <article class="full-ficha" id="p1">
           <div class="ff-head"><div class="ff-id">P1</div><div><h3>Ventanilla Única Digital e Identidad Ciudadana Chiapaneca</h3><p>Gobierno digital y recaudación</p></div></div>
           <div class="ff-body">
             <div class="ff-section"><h4><i class="fas fa-exclamation-circle"></i>Problema que atiende</h4><p>Trámites dispersos, presenciales y expuestos a intermediarios («coyotes») y a la falsificación de documentos; la propia Fiscalía estatal ha desmantelado redes de documentos falsos en oficinas del Registro Civil.</p></div>
@@ -331,7 +359,7 @@
           </div>
         </article>
 
-        <article class="full-ficha">
+        <article class="full-ficha" id="p2">
           <div class="ff-head"><div class="ff-id">P2</div><div><h3>Licencia de Conducir, Tránsito y Padrón Vehicular Digital</h3><p>Gobierno digital y recaudación</p></div></div>
           <div class="ff-body">
             <div class="ff-section"><h4><i class="fas fa-exclamation-circle"></i>Problema que atiende</h4><p>Trámite presencial en módulos, multas y refrendos con alta evasión, y padrón vehicular con información incompleta.</p></div>
@@ -358,7 +386,7 @@
           </div>
         </article>
 
-        <article class="full-ficha">
+        <article class="full-ficha" id="p3">
           <div class="ff-head"><div class="ff-id">P3</div><div><h3>Registro Público, Catastro y Escritura Digital</h3><p>Gobierno digital y recaudación</p></div></div>
           <div class="ff-body">
             <div class="ff-section"><h4><i class="fas fa-exclamation-circle"></i>Problema que atiende</h4><p>La certeza jurídica sobre la tierra y la vivienda es base del crédito, la inversión y la paz social. El reglamento ya prevé folio electrónico y firma electrónica (con Ley de Firma Electrónica Avanzada), pero el certificado de libertad de gravamen sigue presencial y tarda 5–8 días hábiles (por confirmar). Nuevo León ya opera ventanilla digital para notarios, geoportal y digitalización de libros históricos.</p></div>
@@ -389,7 +417,7 @@
           </div>
         </article>
 
-        <article class="full-ficha">
+        <article class="full-ficha" id="p4">
           <div class="ff-head"><div class="ff-id">P4</div><div><h3>Motor Inteligente de Recaudación y Cumplimiento Fiscal Gradual</h3><p>Gobierno digital y recaudación</p></div></div>
           <div class="ff-body">
             <div class="ff-section"><h4><i class="fas fa-exclamation-circle"></i>Problema que atiende</h4><p>Alta dependencia de recursos federales y alta informalidad económica; las leyes fiscales exigen procesos digitales a un universo con poca bancarización y baja alfabetización digital.</p></div>
@@ -417,7 +445,7 @@
           </div>
         </article>
 
-        <article class="full-ficha">
+        <article class="full-ficha" id="p11">
           <div class="ff-head"><div class="ff-id">P11</div><div><h3>App de Gobierno para Todos los Ciudadanos (trámites, pagos y denuncias)</h3><p>Gobierno digital y recaudación</p></div></div>
           <div class="ff-body">
             <div class="ff-section"><h4><i class="fas fa-exclamation-circle"></i>Problema que atiende</h4><p>Los ciudadanos deben recorrer varias dependencias y canales para tramitar, pagar o reportar problemas; los reportes de seguridad, servicios y baches no tienen un canal único con seguimiento.</p></div>
@@ -449,11 +477,11 @@
     </div>
 
     <!-- MOVILIDAD -->
-    <div class="pf-category">
+    <div class="pf-category" id="movilidad">
       <div class="pf-cat-head"><div class="pf-cat-icon"><i class="fas fa-bus"></i></div><div><h3 class="pf-cat-title">Movilidad y Turismo</h3><p class="pf-cat-sub">P5 · P6 · P12</p></div></div>
       <div class="pf-fichas">
 
-        <article class="full-ficha">
+        <article class="full-ficha" id="p5">
           <div class="ff-head"><div class="ff-id">P5</div><div><h3>Credencial QR de Transporte, Recaudo Electrónico y Cajeros de Autopago</h3><p>Movilidad y turismo</p></div></div>
           <div class="ff-body">
             <div class="ff-section"><h4><i class="fas fa-exclamation-circle"></i>Problema que atiende</h4><p>El pasaje se paga en efectivo y no se encontró sistema de pago con tarjeta. Eso facilita la fuga de ingresos y dificulta verificar tarifas sociales (exención estudiantil que el gremio dijo estar dispuesto a discutir en 2026). Plataformas: 1.5% por viaje (por confirmar), sin capa tecnológica para verificarlo.</p></div>
@@ -482,7 +510,7 @@
           </div>
         </article>
 
-        <article class="full-ficha">
+        <article class="full-ficha" id="p6">
           <div class="ff-head"><div class="ff-id">P6</div><div><h3>Transporte Urbano Eléctrico Financiado con Terminales de Pago Digital</h3><p>Movilidad y turismo</p></div></div>
           <div class="ff-body">
             <div class="ff-section"><h4><i class="fas fa-exclamation-circle"></i>Problema que atiende</h4><p>Diálogo con concesionarios sobre autobuses eléctricos iniciado en junio de 2026, sin flotas ni rutas anunciadas. Interés en Cablebús para Tuxtla; antecedente del «Conejobús» como advertencia.</p></div>
@@ -510,7 +538,7 @@
           </div>
         </article>
 
-        <article class="full-ficha">
+        <article class="full-ficha" id="p12">
           <div class="ff-head"><div class="ff-id">P12</div><div><h3>Pase Turístico y App del Turista (red de transporte y dinero fresco)</h3><p>Movilidad y turismo</p></div></div>
           <div class="ff-body">
             <div class="ff-section"><h4><i class="fas fa-exclamation-circle"></i>Problema que atiende</h4><p>Chiapas tiene activos turísticos de nivel mundial (Cañón del Sumidero, San Cristóbal, Palenque, selvas y costas), pero la experiencia está fragmentada y el gasto del visitante se captura de forma parcial.</p></div>
@@ -543,10 +571,10 @@
     </div>
 
     <!-- ECONOMIA -->
-    <div class="pf-category">
+    <div class="pf-category" id="economia">
       <div class="pf-cat-head"><div class="pf-cat-icon"><i class="fas fa-store"></i></div><div><h3 class="pf-cat-title">Economía Local y Pagos</h3><p class="pf-cat-sub">P7 — la puerta de entrada del ecosistema</p></div></div>
       <div class="pf-fichas">
-        <article class="full-ficha">
+        <article class="full-ficha" id="p7">
           <div class="ff-head"><div class="ff-id">P7</div><div><h3>Red de POS Comunitario: Autocobro en Tortillerías y Abarrotes</h3><p>Puerta de entrada del ecosistema de pagos y servicios</p></div></div>
           <div class="ff-body">
             <div class="ff-section"><h4><i class="fas fa-exclamation-circle"></i>Problema que atiende</h4><p>Según Banxico, entre 80% y 90% de los pagos en Chiapas y Oaxaca son en efectivo. Abarrotes y tortillerías son el comercio de mayor cercanía a la población, pero operan sin pagos digitales, sin acceso a crédito formal y con cadenas de proveeduría largas.</p></div>
@@ -578,11 +606,11 @@
     </div>
 
     <!-- SERVICIOS -->
-    <div class="pf-category">
+    <div class="pf-category" id="servicios">
       <div class="pf-cat-head"><div class="pf-cat-icon"><i class="fas fa-droplet"></i></div><div><h3 class="pf-cat-title">Servicios Básicos y Energía</h3><p class="pf-cat-sub">P8 · P9 · P10</p></div></div>
       <div class="pf-fichas">
 
-        <article class="full-ficha">
+        <article class="full-ficha" id="p8">
           <div class="ff-head"><div class="ff-id">P8</div><div><h3>Agua Inteligente y Energía Solar para Bombas</h3><p>Servicios básicos y energía</p></div></div>
           <div class="ff-body">
             <div class="ff-section"><h4><i class="fas fa-exclamation-circle"></i>Problema que atiende</h4><p>Organismos operadores con cobro deficiente, facturación por promedio, tomas clandestinas y cartera vencida; el consumo eléctrico de las bombas es gasto principal (dato por validar). Quejas por desabasto y recargos en Tuxtla. El agua es competencia municipal y derecho humano, con mínimo vital.</p></div>
@@ -611,7 +639,7 @@
           </div>
         </article>
 
-        <article class="full-ficha">
+        <article class="full-ficha" id="p9">
           <div class="ff-head"><div class="ff-id">P9</div><div><h3>Financiamiento Energético para Ayuntamientos (luz, alumbrado y bombeo)</h3><p>Servicios básicos y energía</p></div></div>
           <div class="ff-body">
             <div class="ff-section"><h4><i class="fas fa-exclamation-circle"></i>Problema que atiende</h4><p>Los ayuntamientos destinan parte relevante de su presupuesto a la factura de electricidad del alumbrado público, edificios y bombeo de agua, y no siempre cuentan con liquidez para modernizar su consumo.</p></div>
@@ -639,7 +667,7 @@
           </div>
         </article>
 
-        <article class="full-ficha">
+        <article class="full-ficha" id="p10">
           <div class="ff-head"><div class="ff-id">P10</div><div><h3>Conectividad Comunitaria con Internet Satelital a Demanda</h3><p>Línea de negocio aparte · Servicios básicos y energía</p></div></div>
           <div class="ff-body">
             <div class="ff-section"><h4><i class="fas fa-exclamation-circle"></i>Problema que atiende</h4><p>Muchas comunidades rurales y poblados dispersos no tienen internet fijo o es muy caro, lo que limita educación, comercio y acceso a trámites digitales.</p></div>

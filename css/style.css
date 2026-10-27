@@ -221,6 +221,31 @@ h1,h2,h3,h4 { font-family:var(--font-h); color:var(--primary-deep); }
 @keyframes bounce { 0%,20%,50%,80%,100%{transform:translateX(-50%) translateY(0)} 40%{transform:translateX(-50%) translateY(-12px)} 60%{transform:translateX(-50%) translateY(-6px)} }
 @keyframes shake { 0%,100%{transform:translateX(0)} 10%,30%,50%,70%,90%{transform:translateX(-10px)} 20%,40%,60%,80%{transform:translateX(10px)} }
 
+/* Grupos de navegación de 2 niveles */
+.nav-group > a { display:flex; align-items:center; gap:.4rem; }
+.nav-group > a > i.chev { font-size:.66rem; transition:transform .3s; color:var(--gold-primary); }
+.nav-group:hover > a > i.chev { transform:rotate(180deg); }
+.drop {
+    position:absolute; top:100%; left:50%; transform:translate(-50%,0);
+    transform:translate(-50%,0);
+    background:rgba(10,30,58,.99); backdrop-filter:blur(14px);
+    border:1px solid rgba(212,175,55,.4); border-radius:14px;
+    list-style:none; padding:.7rem 0; min-width:250px; margin-top:.55rem;
+    opacity:0; visibility:hidden; box-shadow:var(--shadow-xl); transition:.3s; z-index:1200;
+}
+.nav-group:hover .drop { opacity:1; visibility:visible; }
+.drop strong { display:block; padding:.45rem 1.3rem .25rem; font-size:.68rem; letter-spacing:.1em; color:var(--gold-primary); text-transform:uppercase; }
+.drop a { display:block; padding:.5rem 1.3rem; color:var(--white); text-decoration:none; font-size:.86rem; font-weight:600; transition:.2s; white-space:nowrap; }
+.drop a:hover { background:rgba(212,175,55,.12); color:var(--gold-light); padding-left:1.6rem; }
+.drop-link { color:var(--gold-secondary); }
+.btn-nav {
+    background:var(--grad-gold); color:var(--primary-deep) !important;
+    padding:.55rem 1.35rem !important; border-radius:999px;
+    font-weight:800 !important; box-shadow:var(--shadow-gold); transition:.3s; text-decoration:none;
+}
+.btn-nav:hover { transform:translateY(-2px); box-shadow:0 12px 36px rgba(212,175,55,.5); }
+.btn-nav::after { display:none !important; }
+
 @media (max-width: 1100px) { .footer-grid { grid-template-columns:1fr 1fr; } }
 /* Glosario */
 .glos-index { display:flex; flex-wrap:wrap; gap:.6rem; justify-content:center; margin-bottom:2.5rem; }
